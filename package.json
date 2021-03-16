@@ -10,5 +10,16 @@
     "dom"
   ],
   "author": "Vedant Saini",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AspiringDeveloper3/tonic-modules.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AspiringDeveloper3/tonic-modules/issues"
+  },
+  "homepage": "https://github.com/AspiringDeveloper3/tonic-modules#readme"
 }

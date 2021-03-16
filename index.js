@@ -4,9 +4,14 @@ var repeat = function (timesToRepeat, callback) {
   }
 };
 var hasClass = function (itemToCheck, classToCheck, callback) {
+  callback = callback || null;
   itemToCheck.classList.forEach(function (clas) {
     if (clas === classToCheck) {
-      return callback();
+      if (callback) {
+        return callback();
+      } else {
+        return true;
+      }
     } else {
       return false;
     }
@@ -103,4 +108,23 @@ var titleCase = function (str) {
   return result.join(" ");
 };
 
-module.exports = [repeat,titleCase,snakeCase,kebabCase,keypress,click,numbers,strings,contains,unique,fadeIn,fadeOut,tn,blink,setCss,setText,repeat,hasClass]
+module.exports = [
+  repeat,
+  titleCase,
+  snakeCase,
+  kebabCase,
+  keypress,
+  click,
+  numbers,
+  strings,
+  contains,
+  unique,
+  fadeIn,
+  fadeOut,
+  tn,
+  blink,
+  setCss,
+  setText,
+  repeat,
+  hasClass,
+];
