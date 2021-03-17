@@ -108,7 +108,7 @@ var titleCase = function (str) {
   return result.join(" ");
 };
 
-module.exports = [
+module.exports = {
   repeat,
   titleCase,
   snakeCase,
@@ -127,4 +127,4 @@ module.exports = [
   setText,
   repeat,
   hasClass,
-];
+};
