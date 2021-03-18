@@ -50,9 +50,17 @@ Tonic offers a variety of methods :-
 
   - `parameters`: string to be converted
 
-  - `syntax`: kebabCase('hello world')
+  - `syntax`: snakeCase('hello world')
 
-  - `output`: hello-world
+  - `output`: hello_world
+
+- #### longestWord
+
+  - `parameters`: string 
+
+  - `syntax`: longestWord("Hello Mountains")
+
+  - `output`: Mountains
 
 ### Array methods
 
