@@ -21,6 +21,12 @@ const hasClass = function (itemToCheck, classToCheck, callback) {
     }
   });
 };
+const addClass = (element, classToAdd) => {
+  document.querySelector(element).classList.add(classToAdd);
+};
+const removeClass = (element, classToRemove) => {
+  document.querySelector(element).classList.remove(classToRemove);
+};
 const setCss = function (item, cssProp, value) {
   item.style[cssProp] = value;
 };
@@ -145,4 +151,6 @@ module.exports = {
   repeat,
   hasClass,
   longestWord,
+  addClass,
+  removeClass
 };

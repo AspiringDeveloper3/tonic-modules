@@ -56,7 +56,7 @@ Tonic offers a variety of methods :-
 
 - #### longestWord
 
-  - `parameters`: string 
+  - `parameters`: string
 
   - `syntax`: longestWord("Hello Mountains")
 
@@ -106,6 +106,20 @@ Tonic offers a variety of methods :-
   - `parameters`: element, class, callback **(optional)**
   - `syntax`: hasClass(_tn("h1")_ (this selects the "h1" element), ".hello") _You can also put an additional callback_
   - `output`: false
+
+- #### removeClass
+
+  - `aim`: Remove a class
+  - `parameters`: element, class
+  - `syntax`: removeClass(_tn("h1")_ (this selects the "h1" element), "hello") _You can also put an additional callback_
+  - `output`: _"hello" class is removed from \<h1> element_
+
+- #### addClass
+
+  - `aim`: Add a class
+  - `parameters`: element, class
+  - `syntax`: addClass(_tn("h1")_ (this selects the "h1" element), "hello")
+  - `output`: _"hello" class is added to the \<h1> element_
 
 - #### setCss
 
