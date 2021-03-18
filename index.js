@@ -1,10 +1,6 @@
 const repeat = function (timesToRepeat, callback) {
-  for (
-    const newconstiable = 0;
-    newconstiable < timesToRepeat;
-    newconstiable++
-  ) {
-    callback(newconstiable);
+  for (const newVariable = 0; newVariable < timesToRepeat; newVariable++) {
+    callback(newVariable);
   }
 };
 const hasClass = function (itemToCheck, classToCheck, callback) {
@@ -123,6 +119,7 @@ const snakeCase = function (string) {
 };
 const titleCase = function (str) {
   const result = [];
+  str = str.toLowerCase();
   str.split(" ").forEach(function (word) {
     const capitalLetter = word.split("").splice(0, 1).join("").toUpperCase();
     const smallLetters = word.split("").splice(1, word.length).join("");
@@ -152,5 +149,5 @@ module.exports = {
   hasClass,
   longestWord,
   addClass,
-  removeClass
+  removeClass,
 };
