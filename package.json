@@ -1,6 +1,6 @@
 {
   "name": "tonic-js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A JavaScript general-purpouse library for the modern-age",
   "main": "index.js",
   "keywords": [
